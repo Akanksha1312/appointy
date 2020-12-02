@@ -55,7 +55,7 @@ function Navbar() {
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Services
+                  About Us
                 </Link>
               </li>
               <li className='nav-item'>
@@ -64,13 +64,13 @@ function Navbar() {
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Products
+                  Contact Us
                 </Link>
               </li>
               <li className='nav-btn'>
                 {button ? (
                   <Link to='/sign-up' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>SIGN UP</Button>
+                    <Button buttonStyle='btn--outline'>SIGN IN</Button>
                   </Link>
                 ) : (
                   <Link to='/sign-up' className='btn-link'>
