@@ -1,9 +1,9 @@
-export default function validateInfo(values) {
+export default function validateInfoSignIn(values) {
     let formerrors = {};
   
-    if (!values.username.trim()) {
-      formerrors.username = 'Username required';
-    }
+    // if (!values.username.trim()) {
+    //   formerrors.username = 'Username required';
+    // }
     // else if (!/^[A-Za-z]+/.test(values.name.trim())) {
     //   errors.name = 'Enter a valid name';
     // }
@@ -19,10 +19,10 @@ export default function validateInfo(values) {
       formerrors.password = 'Password needs to be 6 characters or more';
     }
   
-    if (!values.password2) {
-      formerrors.password2 = 'Password is required';
-    } else if (values.password2 !== values.password) {
-      formerrors.password2 = 'Passwords do not match';
-    }
+    // if (!values.password2) {
+    //   formerrors.password2 = 'Password is required'; 
+    // } else if (values.password2 !== values.password) {
+    //   formerrors.password2 = 'Passwords do not match';
+    // }
     return formerrors;
   }

@@ -13,16 +13,21 @@ export default function validateContactInfo(values) {
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
       errors.email = 'Email address is invalid';
     }
-    if (!values.password) {
-      errors.password = 'Message is required';
-    } else if (values.password.length <=0) {
-      errors.password = 'message needs to have more characters';
-    }
+    // if (!values.password) {
+    //   errors.password = 'Message is required';
+    // } else if (values.password.length <=0) {
+    //   errors.password = 'message needs to have more characters';
+    // }
   
-    if (!values.password2) {
-      errors.password2 = 'Password is required';
-    } else if (values.password2 !== values.password) {
-      errors.password2 = 'Passwords do not match';
+    // if (!values.password2) {
+    //   errors.password2 = 'Password is required';
+    // } else if (values.password2 !== values.password) {
+    //   errors.password2 = 'Passwords do not match';
+    // }
+
+    if (!values.message.trim()) {
+      errors.message = 'Message required';
     }
+
     return errors;
   }

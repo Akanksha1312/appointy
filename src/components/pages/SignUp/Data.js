@@ -2,11 +2,12 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'SIGN UP TODAY', 
+  topLine: 'BOOK TODAY', 
   headline: 'Are you a Patient ?',
   description:
     'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you are ready to go.',
-  source:'/form',
+  //source:'/patient-sign-up',
+  source:'/patient-home',
   buttonLabel: 'I am a PATIENT !',
   imgStart: '',
   img: 'images2/patient2.png',
@@ -35,7 +36,7 @@ export const homeObjThree = {
   headline: 'Are you a Doctor ?',
   description:
     "Maintain your appointments at your own ease. Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-  source:'/form',
+  source:'/doctor-sign-up',
   buttonLabel: 'I am a DOCTOR !',
   imgStart: 'start',
   img: 'images2/3632611.png',

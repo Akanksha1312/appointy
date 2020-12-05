@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+//import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FaLaptopMedical } from 'react-icons/fa';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
-function Navbar() {
+
+function NavbarPatient() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -68,9 +70,9 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-btn'>
-                {button ? (
+                {/* {button ? (
                   <Link to='/sign-in' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>SIGN IN</Button>
+                    <Button buttonStyle='btn--outline'>Profile</Button>
                   </Link>
                 ) : (
                   <Link to='/sign-in' className='btn-link'>
@@ -82,7 +84,12 @@ function Navbar() {
                       SIGN UP
                     </Button>
                   </Link>
-                )}
+                )} */}
+                <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </DropdownButton>
               </li>
             </ul>
           </div>
@@ -92,4 +99,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarPatient;

@@ -68,13 +68,13 @@ const ContactSignUp = ({ submitForm }) => {
             <label className='form-label'>Message</label>
             <input
               className='form-input'
-              type='password'
-              name='password2'
+              type='text'
+              name='message'
               placeholder='Your Message'
-              value={values.password2}
+              value={values.message}
               onChange={handleChange}
             />
-            {errors.password && <p>{errors.password}</p>} 
+            {errors.message && <p>{errors.message}</p>} 
           </div> 
           <Button className='form-input-btn' buttonSize='btn--wide' buttonColor='blue' typle='submit'>
             Submit

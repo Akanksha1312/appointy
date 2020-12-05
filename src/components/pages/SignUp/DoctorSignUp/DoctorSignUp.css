@@ -1,12 +1,12 @@
-.form-container- {
+.form-container_ {
     margin: 100px auto;
-    width: 1400px;
+    width: 1350px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 10px;
-    height: 600px;
+    height: 790px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
   }
   
   /* .close-btn {
@@ -19,13 +19,13 @@
     cursor: pointer;
   } */
   
-  .form-content-left- {
+  .form-content-left_ {
     background: #DBFBFA;
     border-radius: 10px 0 0 10px;
     position: relative;
   }
   
-  .form-img- {
+  .form-img_ {
     width: 80%;
     height: 80%;
     position: absolute;
@@ -34,7 +34,7 @@
     transform: translate(-50%, -50%);
   }
   
-  .form-img-2 {
+  .form-img-2- {
     width: 60%;
     height: 60%;
     position: absolute;
@@ -43,20 +43,20 @@
     transform: translate(-50%, -50%);
   }
   
-  .form-success- {
+  .form-success_ {
     text-align: center;
     font-size: 24px;
     margin-top: 80px;
     color: #fff;
   }
   
-  .form-content-right- {
+  .form-content-right_ {
     border-radius: 0 10px 10px 0;
     position: relative;
     background: #1c2237;
   }
   
-  .form- {
+  .form_ {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,7 +69,7 @@
     align-items: center;
   }
   
-  .form- h1 {
+  .form_ h1 {
     font-size: 1rem;
     text-align: start;
     width: 80%;
@@ -77,25 +77,25 @@
     color: #fff;
   }
   
-  .form-inputs- {
+  .form-inputs_ {
     margin-bottom: 0.5rem;
     width: 80%;
   }
   
-  .form-inputs- p {
+  .form-inputs_ p {
     font-size: 0.8rem;
     margin-top: 0.5rem;
     color: #f00e0e;
   }
   
-  .form-label- {
+  .form-label_ {
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: 6px;
     color: #fff;
   }
   
-  .form-input- {
+  .form-input_ {
     display: block;
     padding-left: 10px;
     outline: none;
@@ -105,7 +105,7 @@
     border: none;
   }
   
-  .form-input-::placeholder {
+  .form-input_::placeholder {
     color: #595959;
     font-size: 12px;
   }
@@ -136,7 +136,7 @@
     transition: all 0.4s ease-out;
   } */
   
-  .form-input-login- {
+  .form-input-login_ {
     font-size: 0.8rem;
     margin-top: 10px;
     color: #fff;
@@ -144,7 +144,7 @@
     text-align: center;
   }
   
-  .form-input-login- a {
+  .form-input-login_ a {
     text-decoration: none;
     color: #27cdff;
     font-weight: 600;

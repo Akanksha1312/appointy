@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 
-const useContactForm = (callback, validate) => {
+const useFormDoctor = (callback, validate) => {
   const [values, setValues] = useState({
     username: '',
     email: '',
-    // password: '',
-    // password2: '',
-    message:''
+    password: '',
+    password2: '',
+    license:'',
+    location:''
   });
-  const [errors, setErrors] = useState({});
+  const [formerrors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
@@ -28,14 +29,14 @@ const useContactForm = (callback, validate) => {
 
   useEffect(
     () => {
-      if (Object.keys(errors).length === 0 && isSubmitting) {
+      if (Object.keys(formerrors).length === 0 && isSubmitting) {
         callback();
       }
     },
-    [errors]
+    [formerrors]
   );
 
-  return { handleChange, handleSubmit, values, errors };
+  return { handleChange, handleSubmit, values, formerrors };
 };
 
-export default useContactForm;
+export default useFormDoctor;

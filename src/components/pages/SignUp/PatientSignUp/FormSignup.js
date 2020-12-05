@@ -1,8 +1,9 @@
 import React from 'react';
+//import {Link} from 'react-router-dom'
 import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
-import { Button } from '../../Button';
+import { Button } from '../../../Button';
 
 const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, formerrors } = useForm(
@@ -14,16 +15,15 @@ const FormSignup = ({ submitForm }) => {
     <div className='form-content-right-'>
       <form onSubmit={handleSubmit} className='form-' noValidate>
         <h1>
-          Get started with us today! Create your account by filling out the
-          information below.
+          Get started with us today!
         </h1>
         <div className='form-inputs-'>
-          <label className='form-label-'>Username</label>
+          <label className='form-label-'>Name</label>
           <input
             className='form-input-'
             type='text'
             name='username'
-            placeholder='Enter your username'
+            placeholder='Enter your name'
             value={values.username}
             onChange={handleChange}
           />
@@ -41,7 +41,7 @@ const FormSignup = ({ submitForm }) => {
           />
           {formerrors.email && <p>{formerrors.email}</p>}
         </div>
-        <div className='form-inputs-'>
+        {/* <div className='form-inputs-'>
           <label className='form-label-'>Password</label>
           <input
             className='form-input-'
@@ -64,16 +64,28 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           {formerrors.password2 && <p>{formerrors.password2}</p>}
-        </div>
-        <Button className='form-input-btn' buttonSize='btn--wide' buttonColor='blue' typle='submit'>
-          Sign Up
+        </div> */}
+        {/* <div className='form-inputs-'>
+          <label className='form-label-'>Location</label>
+          <input
+            className='form-input-'
+            type='text'
+            name='location'
+            placeholder='Enter Location'
+            value={values.location}
+            onChange={handleChange}
+          />
+          {formerrors.location && <p>{formerrors.location}</p>}
+        </div> */}
+        <Button className='form-input-btn' buttonSize='btn--wide' buttonColor='blue'>
+          Book
         </Button>
         {/* <button className='form-input-btn' type='submit'>
           Sign up
         </button> */}
-        <span className='form-input-login-'>
-          Already have an account? Login <a href='#'>here</a>
-        </span>
+        {/* <span className='form-input-login-'>
+          Already have an account? <Link to='/sign-in'>Login here</Link> 
+        </span> */}
       </form>
     </div>
   );
